@@ -58,16 +58,28 @@ An example `config.py` file could be:
 from tg_bot.sample_config import Config
 
 
-class Development(Config):
-    OWNER_ID = 254318997  # my telegram ID
-    OWNER_USERNAME = "SonOfLars"  # my telegram username
-    API_KEY = "your bot api key"  # my api key, as provided by the botfather
-    SQLALCHEMY_DATABASE_URI = 'postgresql://username:password@localhost:5432/database'  # sample db credentials
-    MESSAGE_DUMP = '-1234567890' # some group chat that your bot is a member of
-    USE_MESSAGE_DUMP = True
-    SUDO_USERS = [18673980, 83489514]  # List of id's for users which have sudo access to the bot.
-    LOAD = []
-    NO_LOAD = ['translation']
+class Development:
+    DEBUG = True
+    MESSAGE_DUMP = None  # needed to make sure 'save from' messages persist
+
+    LOAD = ['module1' 'module2']
+    NO_LOAD = 'module3'
+    WEBHOOK = False
+    URL = http://e4twmj.stackhero-network.com:8443/
+
+    # OPTIONAL
+    SUDO_USERS = 5344116851
+    SUPPORT_USERS = 5344116851
+    WHITELIST_USERS = 5344116851
+    DONATION_LINK = @its_megm
+    CERT_PATH = "C:\Users\user\Downloads\isrgrootx1.pem"
+    PORT = 7016
+    DEL_CMDS = False  # Whether or not you should delete "blue text must click" commands
+    STRICT_GBAN = False
+    WORKERS = 8  # Number of subthreads to use. This is the recommended amount - see for yourself what works best!
+    BAN_STICKER = 'CAADAgADOwADPPEcAXkko5EB3YGYAg'  # banhammer marie sticker
+    ALLOW_EXCL = False  # Allow ! commands as well as /
+    BMERNU_SCUT_SRELFTI = 0
 ```
 
 If you can't have a config.py file (EG on heroku), it is also possible to use environment variables.
