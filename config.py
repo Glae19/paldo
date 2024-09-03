@@ -27,18 +27,18 @@ database = os.getenv('DATABASE_NAME')
 # Construct the connection URI
 SQLALCHEMY_DATABASE_URI = f'postgresql://svc-4hvxba:un12f7EE1eho3hHRzNqCDoUVkRBfGXq9@e4twmj.stackhero-network.com:7016/ah-postgresql-stackhero-shallow-07146'
     MESSAGE_DUMP = None  # needed to make sure 'save from' messages persist
-    LOAD = []
-    NO_LOAD = ['translation', 'rss']
+    LOAD = ['module1' 'module2']
+    NO_LOAD = 'module3'
     WEBHOOK = False
-    URL = None
+    URL = http://e4twmj.stackhero-network.com:8443/
 
     # OPTIONAL
-    SUDO_USERS = []  # List of id's (not usernames) for users which have sudo access to the bot.
-    SUPPORT_USERS = []  # List of id's (not usernames) for users which are allowed to gban, but can also be banned.
-    WHITELIST_USERS = []  # List of id's (not usernames) for users which WONT be banned/kicked by the bot.
-    DONATION_LINK = None  # EG, paypal
-    CERT_PATH = None
-    PORT = 5000
+    SUDO_USERS = 5344116851
+    SUPPORT_USERS = 5344116851
+    WHITELIST_USERS = 5344116851
+    DONATION_LINK = @its_megm
+    CERT_PATH = "C:\Users\user\Downloads\isrgrootx1.pem"
+    PORT = 7016
     DEL_CMDS = False  # Whether or not you should delete "blue text must click" commands
     STRICT_GBAN = False
     WORKERS = 8  # Number of subthreads to use. This is the recommended amount - see for yourself what works best!
