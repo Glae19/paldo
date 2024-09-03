@@ -10,35 +10,35 @@ class Config(object):
     LOGGER = True
 
     # REQUIRED
-    API_KEY = 7471883711:AAHx0WxihP2PBAq67yIFEXLEiywdn_u95sM
-    OWNER_ID = 5344116851  # If you dont know, run the bot and do /id in your private chat with it
-    OWNER_USERNAME = @its_megm
+    API_KEY = "7494737749:AAG5Et7FuBX5B6Hua62xUsEDuvewfjT3D-k"
+    OWNER_ID = "5344116851"  # If you dont know, run the bot and do /id in your private chat with it
+    OWNER_USERNAME = "@its_megm"
 
     # RECOMMENDED
     import os
 
 # Retrieve environment variables
-username = os.getenv('svc-4hvxba')  # Use the environment variable names
-password = os.getenv('un12f7EE1eho3hHRzNqCDoUVkRBfGXq9')
-host = os.getenv('e4twmj.stackhero-network.com')
-port = os.getenv('7016')
-database = os.getenv('ah-postgresql-stackhero-shallow-07146')
+username = os.getenv('DATABASE_USERNAME')
+password = os.getenv('DATABASE_PASSWORD')
+host = os.getenv('DATABASE_HOST')
+port = os.getenv('DATABASE_PORT')
+database = os.getenv('DATABASE_NAME')
 
 # Construct the connection URI
 SQLALCHEMY_DATABASE_URI = f'postgresql://svc-4hvxba:un12f7EE1eho3hHRzNqCDoUVkRBfGXq9@e4twmj.stackhero-network.com:7016/ah-postgresql-stackhero-shallow-07146'
     MESSAGE_DUMP = None  # needed to make sure 'save from' messages persist
-    LOAD = []
-    NO_LOAD = ['translation', 'rss']
+    LOAD = ['module1' 'module2']
+    NO_LOAD = 'module3'
     WEBHOOK = False
-    URL = None
+    URL = http://e4twmj.stackhero-network.com:8443/
 
     # OPTIONAL
-    SUDO_USERS = []  # List of id's (not usernames) for users which have sudo access to the bot.
-    SUPPORT_USERS = []  # List of id's (not usernames) for users which are allowed to gban, but can also be banned.
-    WHITELIST_USERS = []  # List of id's (not usernames) for users which WONT be banned/kicked by the bot.
-    DONATION_LINK = None  # EG, paypal
-    CERT_PATH = None
-    PORT = 5000
+    SUDO_USERS = 5344116851
+    SUPPORT_USERS = 5344116851
+    WHITELIST_USERS = 5344116851
+    DONATION_LINK = @its_megm
+    CERT_PATH = "C:\Users\user\Downloads\isrgrootx1.pem"
+    PORT = 7016
     DEL_CMDS = False  # Whether or not you should delete "blue text must click" commands
     STRICT_GBAN = False
     WORKERS = 8  # Number of subthreads to use. This is the recommended amount - see for yourself what works best!
