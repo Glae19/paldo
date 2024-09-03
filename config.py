@@ -26,7 +26,11 @@ database = os.getenv('DATABASE_NAME')
 
 # Construct the connection URI
 SQLALCHEMY_DATABASE_URI = f'postgresql://svc-4hvxba:un12f7EE1eho3hHRzNqCDoUVkRBfGXq9@e4twmj.stackhero-network.com:7016/ah-postgresql-stackhero-shallow-07146'
+    # Example of consistent indentation
+class Development:
+    DEBUG = True
     MESSAGE_DUMP = None  # needed to make sure 'save from' messages persist
+
     LOAD = ['module1' 'module2']
     NO_LOAD = 'module3'
     WEBHOOK = False
