@@ -59,7 +59,8 @@ class Development(Config):
     SUPPORT_USERS = [5344116851]
     WHITELIST_USERS = [5344116851]
     DONATION_LINK = "@its_megm"
-    CERT_PATH = "C:\\Users\\user\\Downloads\\isrgrootx1.pem"
+   CERT_PATH = r"C:\Users\user\Downloads\isrgrootx1.pem"
+
 
     PORT = 7016
     DEL_CMDS = False  # Whether or not you should delete "blue text must click" commands
@@ -88,7 +89,8 @@ class Development:
     LOAD = ['module1' 'module2']
     NO_LOAD = 'module3'
     WEBHOOK = False
-    URL = "http://e4twmj.stackhero-network.com:8443/"
+    CERT_PATH = r"C:\Users\user\Downloads\isrgrootx1.pem"
+
 
     # OPTIONAL
     SUDO_USERS = 5344116851
