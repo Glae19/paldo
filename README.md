@@ -65,7 +65,7 @@ class Development:
     LOAD = ['module1' 'module2']
     NO_LOAD = 'module3'
     WEBHOOK = False
-    URL = http://e4twmj.stackhero-network.com:8443/
+    URL = "http://e4twmj.stackhero-network.com:8443/"
 
     # OPTIONAL
     SUDO_USERS = 5344116851
