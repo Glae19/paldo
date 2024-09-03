@@ -15,7 +15,17 @@ class Config(object):
     OWNER_USERNAME = "@its_megm"
 
     # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = 'sqldbtype://username:pw@hostname:port/db_name'  # needed for any database modules
+    import os
+
+# Retrieve environment variables
+username = os.getenv('DATABASE_USERNAME')
+password = os.getenv('DATABASE_PASSWORD')
+host = os.getenv('DATABASE_HOST')
+port = os.getenv('DATABASE_PORT')
+database = os.getenv('DATABASE_NAME')
+
+# Construct the connection URI
+SQLALCHEMY_DATABASE_URI = f'postgresql://svc-4hvxba:un12f7EE1eho3hHRzNqCDoUVkRBfGXq9@e4twmj.stackhero-network.com:7016/ah-postgresql-stackhero-shallow-07146'
     MESSAGE_DUMP = None  # needed to make sure 'save from' messages persist
     LOAD = []
     NO_LOAD = ['translation', 'rss']
