@@ -20,7 +20,8 @@ class Config(object):
 
     # Construct the connection URI
     SQLALCHEMY_DATABASE_URI = (
-        f'postgresql://svc-4hvxba:un12f7EE1eho3hHRzNqCDoUVkRBfGXq9@e4twmj.stackhero-network.com:7016/ah-postgresql-stackhero-shallow-07146'"
+        f'postgresql://svc-4hvxba:un12f7EE1eho3hHRzNqCDoUVkRBfGXq9@e4twmj.stackhero-network.com:7016/ah-postgresql-stackhero-shallow-07146'
+
     )
 
 class Development(Config):
